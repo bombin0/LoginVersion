@@ -10,6 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20190822134952) do
+
+  create_table "qualifications", force: :cascade do |t|
+    t.integer "userid"
+    t.string "skillname"
+    t.integer "skillid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "shifts", force: :cascade do |t|
+    t.integer "userid"
+    t.integer "starttime"
+    t.integer "endtime"
+    t.integer "shiftlength"
+    t.integer "storeid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "password"
+    t.string "phonenumber"
+    t.string "emailaddress"
+    t.boolean "ismanager"
+    t.boolean "isactive"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

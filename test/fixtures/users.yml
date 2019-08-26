@@ -3,15 +3,17 @@
 one:
   firstname: MyString
   lastname: MyString
+  password: MyString
   phonenumber: MyString
   emailaddress: MyString
-  ismanager: 1
+  ismanager: false
   isactive: false
 
 two:
   firstname: MyString
   lastname: MyString
+  password: MyString
   phonenumber: MyString
   emailaddress: MyString
-  ismanager: 1
+  ismanager: false
   isactive: false
